@@ -1,5 +1,5 @@
 ---
-import catpng from "../assets/icon/cat.png";
+import catpng from "../assets/icon/cat.svg";
 ---
 
 <header>
@@ -8,21 +8,20 @@ import catpng from "../assets/icon/cat.png";
     <h1><a href="/">Mewo-Café</a></h1>
   </div>
 
-  
-  <i class="fa-solid fa-bars"></i>
-  <nav class="descktop-nav">
+  <div class="burger_container"><i class="fa-solid fa-bars"></i></div>
+
+  <nav class="desktop-nav">
     <ul>
       <li><a href="/about" target="_blank">ABOUT</a></li>
-      <li><a href="/The Cats" target="_blank">THE CATS</a></li>
+      <li><a href="/the-cats" target="_blank">THE CATS</a></li>
       <li><a href="/contact" target="_blank">CONTACT</a></li>
     </ul>
   </nav>
 
-
-  <nav class="mobil-nav">
+    <nav class="mobil-nav">
     <ul>
       <li><a href="/about" target="_blank">ABOUT</a></li>
-      <li><a href="/The Cats" target="_blank">THE CATS</a></li>
+      <li><a href="/the-cats" target="_blank">THE CATS</a></li>
       <li><a href="/contact" target="_blank">CONTACT</a></li>
     </ul>
   </nav>
@@ -50,12 +49,12 @@ import catpng from "../assets/icon/cat.png";
     list-style-type: none;
     display: inline-block;
     padding: 0.8rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-right: 0.5rem;
   }
 
   div {
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,16 +68,12 @@ import catpng from "../assets/icon/cat.png";
   }
   a {
     font-weight: bold;
-    color: #dbd1b4;
+    color: rgb(254, 252, 232);
   }
-  .descktop-nav {
-    border: 2px solid rgb(21, 255, 0);
-
-  }
-
+ 
   .mobil-nav {
-    display: block;
-    
+    display: none;
+    position: fixed;
   }
 
   .mobil-nav ul {
@@ -86,30 +81,60 @@ import catpng from "../assets/icon/cat.png";
     flex-direction: column;
     position: fixed;
     background-color: black;
+    color: rgb(254, 252, 232);
     top: 70px;
     right: 10px;
   }
 
   a:hover {
-    color: rgb(251, 255, 0);
+    color: rgb(220, 38, 38);
   }
 
-  i:hover .mobil-nav {
+  .burger_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    font-size: 1.5rem;
+  }
+
+  .burger_container:hover ~ .mobil-nav {
     color: #dbd1b4;
     display: flex;
-
   }
 
   @media (max-width: 768px) {
-    .descktop-nav {
+    .desktop-nav {
       display: none;
     }
+
     .fa-solid {
       display: block;
     }
   }
-
- /*  nav{
-    display: block;
-  } */
+  
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var burgerContainer = document.querySelector(".burger_container");
+    var mobilNav = document.querySelector(".mobil-nav");
+
+    function closeNav() {
+      mobilNav.style.display = "none";
+    }
+
+    burgerContainer.addEventListener("click", function () {
+      mobilNav.style.display = "flex";
+    });
+
+    window.addEventListener("click", function (event) {
+      var isClickInsideNav =
+        burgerContainer.contains(event.target) ||
+        mobilNav.contains(event.target);
+      if (!isClickInsideNav) {
+        closeNav();
+      }
+    });
+  });
+</script>

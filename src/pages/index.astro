@@ -16,22 +16,20 @@ import Footer from "../components/Footer.astro";
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <script src="https://kit.fontawesome.com/949b285a41.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/949b285a41.js"
+      crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Home</title>
   </head>
 
   <body>
-    <header>
-      <Header />
-    </header>
-
+    <Header />
     <main>
       <section
         class="section-1"
-        style={`background-image: url('${optimizedBackgroundImage.src}'); background-size: cover; background-position: center; 	
-background-repeat: no-repeat;`}
+        style={`background-image: url('${optimizedBackgroundImage.src}'); background-size: cover; background-position: center; background-repeat: no-repeat;`}
       >
         <div class="bg-img h-[50px]"></div>
 
@@ -64,7 +62,7 @@ background-repeat: no-repeat;`}
 
       <section class="grid grid-cols-5 gap-2.5 mt-20 mb-20 p-5 section-grid">
         <div
-          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1 hover:scale-105 "
         >
           <img
             class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
@@ -78,14 +76,14 @@ background-repeat: no-repeat;`}
               mollitia autem perspiciatis, odio provident quidem sunt vero eum
               officia assumenda <a
                 class="text-blue-500 hover:text-green-500"
-                href="#">Lern More</a
+                href="/about">Lern More</a
               >
             </p>
           </div>
         </div>
 
         <div
-          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1 hover:scale-105 "
         >
           <img
             class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
@@ -99,14 +97,14 @@ background-repeat: no-repeat;`}
               mollitia autem perspiciatis, odio provident quidem sunt vero eum
               officia assumenda <a
                 class="text-blue-500 hover:text-green-500"
-                href="#">Lern More</a
+                href="the-cats">Lern More</a
               >
             </p>
           </div>
         </div>
 
         <div
-          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1 hover:scale-105 "
         >
           <img
             class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
@@ -120,14 +118,14 @@ background-repeat: no-repeat;`}
               mollitia autem perspiciatis, odio provident quidem sunt vero eum
               officia assumenda <a
                 class="text-blue-500 hover:text-green-500"
-                href="#">Lern More</a
+                href="/about">Lern More</a
               >
             </p>
           </div>
         </div>
 
         <div
-          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1 hover:scale-105 "
         >
           <img
             class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
@@ -141,14 +139,14 @@ background-repeat: no-repeat;`}
               mollitia autem perspiciatis, odio provident quidem sunt vero eum
               officia assumenda <a
                 class="text-blue-500 hover:text-green-500"
-                href="#">Lern More</a
+                href="the-cats">Lern More</a
               >
             </p>
           </div>
         </div>
 
         <div
-          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1 hover:scale-105 "
         >
           <img
             class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
@@ -162,16 +160,14 @@ background-repeat: no-repeat;`}
               mollitia autem perspiciatis, odio provident quidem sunt vero eum
               officia assumenda <a
                 class="text-blue-500 hover:text-green-500"
-                href="#">Lern More</a
+                href="/about">Lern More</a
               >
             </p>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <Footer />
-    </footer>
+    <Footer />
   </body>
 </html>
 

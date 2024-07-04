@@ -8,23 +8,21 @@ import Footer from "../components/Footer.astro";
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="https://kit.fontawesome.com/949b285a41.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Contact</title>
   </head>
 
   <body>
-    <header>
       <Header />
-    </header>
-
     <main>
-      <div class="flex justify-center mb-24">
+      <div class="flex justify-center mb-24 ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.96520856468!2d13.308210337917608!3d52.51596870000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851215a5f030f%3A0x4e5abf7015b7bdc0!2sZur%20Mieze!5e0!3m2!1sar!2sde!4v1720005922642!5m2!1sar!2sde"
           width="60%"
           height="600"
-          style="border-radius:10px;"
+          style="border-radius:16px;"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -53,7 +51,7 @@ import Footer from "../components/Footer.astro";
                 placeholder="Tell us more..."
                 cols="25"
                 rows="5"></textarea>
-              <button class="bg-white text-red-950 rounded-full font-black mt-6 mb-6" type="submit">Submit</button>
+              <button class="bg-white text-red-950 rounded-full hover:text-red-600 hover:scale-105 font-black mt-6 mb-6" type="submit">Submit</button>
             </fieldset>
           </form>
         </div>
@@ -76,11 +74,17 @@ import Footer from "../components/Footer.astro";
           <h2 class="mb-6">Email:Meow.Cafe@gmx.de</h2>
         </div>
       </section>
-    </main>
 
-    <footer>
+      <div class="flex justify-center items-center p-8 mb-10">
+        <a class="p-3 text-5xl text-red-950 hover:text-green-500 hover:scale-125" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="p-3 text-5xl text-red-950 hover:text-blue-600 hover:scale-125" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="p-3 text-5xl text-red-950 hover:text-pink-600 hover:scale-125" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="p-3 text-5xl text-red-950 hover:text-blue-600 hover:scale-125" href="https://web.telegram.org/a/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        <a class="p-3 text-5xl text-red-950 hover:text-white hover:scale-125" href="https://x.com/?lang=ar" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        
+      </div>
+    </main>
       <Footer />
-    </footer>
   </body>
 </html>
 

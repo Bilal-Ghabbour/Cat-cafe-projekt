@@ -16,18 +16,19 @@ import cat8 from "../assets/photo/cat8.png";
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script
+      src="https://kit.fontawesome.com/949b285a41.js"
+      crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>THE CATS</title>
   </head>
 
   <body>
-    <header>
-      <Header />
-    </header>
+    <Header />
     <main>
       <div>
-        <h2 class="text-rose-950 text-4xl font-black p-6">MEET THE CATS</h2>
+        <h2 class="text-rose-950 text-5xl font-black p-6">MEET THE CATS</h2>
         <p class="text-rose-950 text-2xl font-black p-6">
           Mewo Café is a re-homing and care facility for cats and kittens from a
           range of backgrounds. <br /> From rescue cats, to strays, to cats which
@@ -37,9 +38,9 @@ import cat8 from "../assets/photo/cat8.png";
       </div>
 
       <section class="grid grid-cols-4 gap-2 mt-10 mb-20 p-4 gap-4">
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
-            class="w-[500px] h-[500px] rounded-3xl"
+            class="w-[500px] h-[500px] rounded-3xl "
             src={cat1.src}
             alt="cat"
           />
@@ -50,7 +51,7 @@ import cat8 from "../assets/photo/cat8.png";
           </h2>
         </div>
 
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
             class="w-[500px] h-[500px] rounded-3xl"
             src={cat2.src}
@@ -63,7 +64,7 @@ import cat8 from "../assets/photo/cat8.png";
           </h2>
         </div>
 
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
             class="w-[500px] h-[500px] rounded-3xl"
             src={cat3.src}
@@ -76,7 +77,7 @@ import cat8 from "../assets/photo/cat8.png";
           </h2>
         </div>
 
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
             class="w-[500px] h-[500px] rounded-3xl"
             src={cat4.src}
@@ -89,7 +90,7 @@ import cat8 from "../assets/photo/cat8.png";
           </h2>
         </div>
 
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
             class="w-[500px] h-[500px] rounded-3xl"
             src={cat5.src}
@@ -102,7 +103,7 @@ import cat8 from "../assets/photo/cat8.png";
           </h2>
         </div>
 
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
             class="w-[500px] h-[500px] rounded-3xl"
             src={cat6.src}
@@ -115,7 +116,7 @@ import cat8 from "../assets/photo/cat8.png";
           </h2>
         </div>
 
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
             class="w-[500px] h-[500px] rounded-3xl"
             src={cat7.src}
@@ -128,7 +129,7 @@ import cat8 from "../assets/photo/cat8.png";
           </h2>
         </div>
 
-        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1 hover:scale-105">
           <img
             class="w-[500px] h-[500px] rounded-3xl"
             src={cat8.src}
@@ -142,9 +143,7 @@ import cat8 from "../assets/photo/cat8.png";
         </div>
       </section>
     </main>
-    <footer>
-      <Footer />
-    </footer>
+    <Footer />
   </body>
 </html>
 
