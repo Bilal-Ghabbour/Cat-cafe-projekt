@@ -1,0 +1,193 @@
+---
+import "../css/style.css";
+import Header from "../components/Header.astro";
+import Kuchen from "../assets/photo/Kuchen.jpg";
+import halle1 from "../assets/photo/halle1.jpg";
+import halle2 from "../assets/photo/halle2.jpg";
+import halle3 from "../assets/photo/halle3.jpg";
+import halle5 from "../assets/photo/halle5.jpg";
+import pangtree from "../assets/photo/pngtree-cute.jpg";
+import { getImage } from "astro:assets";
+const optimizedBackgroundImage = await getImage({ src: pangtree });
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="https://kit.fontawesome.com/949b285a41.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header>
+      <Header />
+    </header>
+
+    <main>
+      <section
+        class="section-1"
+        style={`background-image: url('${optimizedBackgroundImage.src}'); background-size: cover; background-position: center; 	
+background-repeat: no-repeat;`}
+      >
+        <div class="bg-img h-[50px]"></div>
+
+        <div class="flex flex-row justify-between items-stretch">
+          <div class="bg-img w-[50px] flex-shrink-0 hidden md:block"></div>
+
+          <div class="items-center text-center p-6">
+            <h2 class="text-5xl mb-4">Welcome to The Mewo Cat Café</h2>
+            <p class="text-2xl p-16 text-black-950">
+              Our cat café is a coffee shop where guests can come, enjoy the
+              company of our cats over a drink and experience the benefit of
+              some kitty therapy. Some of our amazing cat café cats are
+              available for adoption so we are hoping we can find forever homes
+              for these fur babies. We believe that the cat café is a great
+              place for cat lovers to visit especially those who are unable to
+              have pets at their homes due to the pace of their lives,
+              allergies, financial situation, responsibility of owning a cat,
+              not allowed pets on their rental, and many other reasons. The cat
+              café cats are your cats too, so now you can come and have fun
+              watching kitties playing, hunting and have cuddles with them in a
+              relaxed stress-free environment.
+            </p>
+          </div>
+
+          <div class="bg-img w-[50px] flex-shrink-0 hidden md:block"></div>
+        </div>
+
+        <div class="bg-img h-[50px] w-full flex-end items-end"></div>
+      </section>
+
+      <section class="grid grid-cols-5 gap-2.5 mt-20 mb-20 p-5 section-grid">
+        <div
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+        >
+          <img
+            class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
+            src={Kuchen.src}
+            alt=""
+          />
+          <div class="p-5 text-yellow-50">
+            <h2>Lorem Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              mollitia autem perspiciatis, odio provident quidem sunt vero eum
+              officia assumenda <a
+                class="text-blue-500 hover:text-green-500"
+                href="#">Lern More</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+        >
+          <img
+            class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
+            src={halle1.src}
+            alt=""
+          />
+          <div class="p-5 text-yellow-50">
+            <h2>Lorem Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              mollitia autem perspiciatis, odio provident quidem sunt vero eum
+              officia assumenda <a
+                class="text-blue-500 hover:text-green-500"
+                href="#">Lern More</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+        >
+          <img
+            class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
+            src={halle2.src}
+            alt=""
+          />
+          <div class="p-5 text-yellow-50">
+            <h2>Lorem Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              mollitia autem perspiciatis, odio provident quidem sunt vero eum
+              officia assumenda <a
+                class="text-blue-500 hover:text-green-500"
+                href="#">Lern More</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+        >
+          <img
+            class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
+            src={halle3.src}
+            alt=""
+          />
+          <div class="p-5 text-yellow-50">
+            <h2>Lorem Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              mollitia autem perspiciatis, odio provident quidem sunt vero eum
+              officia assumenda <a
+                class="text-blue-500 hover:text-green-500"
+                href="#">Lern More</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-red-950 rounded-[35px] flex flex-col items-center col-span-5 md:col-span-2 lg:col-span-1"
+        >
+          <img
+            class="w-[380px] h-[220px] object-cover rounded-[80px] p-3"
+            src={halle5.src}
+            alt=""
+          />
+          <div class="p-5 text-yellow-50">
+            <h2>Lorem Lorem</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              mollitia autem perspiciatis, odio provident quidem sunt vero eum
+              officia assumenda <a
+                class="text-blue-500 hover:text-green-500"
+                href="#">Lern More</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </body>
+</html>
+
+<style>
+  /* Hier kommt dein CSS */
+
+  .bg-img {
+    background-image: url(/icon/paws.png);
+    background-size: 50px;
+  }
+
+  .section-grid {
+    background-color: #ffe1cd;
+  }
+
+  body {
+    margin-top: 6rem;
+  }
+</style>

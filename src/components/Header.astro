@@ -1,0 +1,111 @@
+---
+import catpng from "../assets/icon/cat.png";
+---
+
+<header>
+  <div>
+    <img src={catpng.src} alt="icon" />
+    <h1><a href="/">Mewo-Café</a></h1>
+  </div>
+
+  
+  <i class="fa-solid fa-bars"></i>
+  <nav class="descktop-nav">
+    <ul>
+      <li><a href="/about" target="_blank">ABOUT</a></li>
+      <li><a href="/The Cats" target="_blank">THE CATS</a></li>
+      <li><a href="/contact" target="_blank">CONTACT</a></li>
+    </ul>
+  </nav>
+
+
+  <nav class="mobil-nav">
+    <ul>
+      <li><a href="/about" target="_blank">ABOUT</a></li>
+      <li><a href="/The Cats" target="_blank">THE CATS</a></li>
+      <li><a href="/contact" target="_blank">CONTACT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    background-color: rgb(69, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .fa-solid {
+    display: none;
+  }
+
+  ul li {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  div {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+  }
+  a {
+    font-weight: bold;
+    color: #dbd1b4;
+  }
+  .descktop-nav {
+    border: 2px solid rgb(21, 255, 0);
+
+  }
+
+  .mobil-nav {
+    display: block;
+    
+  }
+
+  .mobil-nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: black;
+    top: 70px;
+    right: 10px;
+  }
+
+  a:hover {
+    color: rgb(251, 255, 0);
+  }
+
+  i:hover .mobil-nav {
+    color: #dbd1b4;
+    display: flex;
+
+  }
+
+  @media (max-width: 768px) {
+    .descktop-nav {
+      display: none;
+    }
+    .fa-solid {
+      display: block;
+    }
+  }
+</style>

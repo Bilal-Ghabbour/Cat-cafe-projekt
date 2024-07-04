@@ -1,0 +1,20 @@
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ffe1cd;
+  
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/public/fonts/Roboto-LightItalic.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Roboto;
+  
+}
+

@@ -1,0 +1,38 @@
+---
+import pet from "../assets/icon/pet.png";
+import zzz from "../assets/icon/zzz.png";
+---
+
+<footer>
+    <div>
+      <img  src={pet.src} alt="icon">
+      <h2>Mewo-Café</h2>
+      <img  src={zzz.src} alt="icon">
+    </div>
+  </footer>
+
+
+  <style>
+    footer{
+        background-color: #450a0a;
+        width: 100%;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    h2 {
+        padding: 1.5rem;
+        font-size: 2rem;
+        color: #dbd1b4;
+    }
+  </style>

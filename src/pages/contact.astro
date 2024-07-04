@@ -1,0 +1,91 @@
+---
+import "../css/style.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header>
+      <Header />
+    </header>
+
+    <main>
+      <div class="flex justify-center mb-24">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.96520856468!2d13.308210337917608!3d52.51596870000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851215a5f030f%3A0x4e5abf7015b7bdc0!2sZur%20Mieze!5e0!3m2!1sar!2sde!4v1720005922642!5m2!1sar!2sde"
+          width="60%"
+          height="600"
+          style="border-radius:10px;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <section class="flex justify-evenly flex-wrap mb-14 mt-14 bg-red-950">
+        <div>
+          <h2 class="text-red-950">Contact Data</h2>
+
+          <form
+            class="text-2xl"
+            action="https://formspree.io/f/xyyrreng"
+            method="POST"
+          >
+            <fieldset class="bg-red-950 flex flex-col">
+              <label class="text-yellow-50 font-black" for="Firstname">First Name:</label>
+              <input type="text" id="Firstname" name="Firstname" />
+              <label class="text-yellow-50 font-black" for="Lastname">Last Name:</label>
+              <input type="text" id="Lastname" name="Lastname" />
+              <label class="text-yellow-50 font-black" for="Phone">Phone:</label>
+              <input type="number" id="Phone" name="Phone" />
+              <label class="text-yellow-50 font-black" for="Email">Email:</label>
+              <input type="email" id="Email" name="Email" />
+              <label class="text-yellow-50 font-black" for="Comments">Comments:</label>
+              <textarea
+                name="Comments"
+                id="Comments"
+                placeholder="Tell us more..."
+                cols="25"
+                rows="5"></textarea>
+              <button class="bg-white text-red-950 rounded-full font-black mt-6 mb-6" type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="bg-red-950 text-yellow-50 text-2xl font-black">
+          <h2 class="mb-5 mt-10">Open time</h2>
+          <ul class="mb-6">
+            <li>Mon-Fri: 10:00-20:00 Uhr</li>
+            <li>Mon-Fri: 09:00-22:00 Uhr</li>
+          </ul>
+          <h2 class="mb-5">Address:</h2>
+          <ul class="mb-6">
+            <li>Haubachstraße 24</li>
+            <li>10585 Berlin</li>
+            <li>Deutschland</li>
+          </ul>
+
+          <h2 class="mb-6">Tel:030 20950880</h2>
+
+          <h2 class="mb-6">Email:Meow.Cafe@gmx.de</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <Footer />
+    </footer>
+  </body>
+</html>
+
+<style>
+  body {
+    margin-top: 8rem;
+  }
+</style>

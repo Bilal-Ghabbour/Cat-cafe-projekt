@@ -1,0 +1,156 @@
+---
+import "../css/style.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import cat1 from "../assets/photo/cat-1.jpg";
+import cat2 from "../assets/photo/cat-2.jpg";
+import cat3 from "../assets/photo/cat-3.jpg";
+import cat4 from "../assets/photo/cat-4.jpg";
+import cat5 from "../assets/photo/cat-5.jpg";
+import cat6 from "../assets/photo/cat-6.jpg";
+import cat7 from "../assets/photo/cat7.jpg";
+import cat8 from "../assets/photo/cat8.png";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>THE CATS</title>
+  </head>
+
+  <body>
+    <header>
+      <Header />
+    </header>
+    <main>
+      <div>
+        <h2 class="text-rose-950 text-4xl font-black p-6">MEET THE CATS</h2>
+        <p class="text-rose-950 text-2xl font-black p-6">
+          Mewo Café is a re-homing and care facility for cats and kittens from a
+          range of backgrounds. <br /> From rescue cats, to strays, to cats which
+          have had medical issues - we take them in and look after them until they
+          find their forever home.
+        </p>
+      </div>
+
+      <section class="grid grid-cols-4 gap-2 mt-10 mb-20 p-4 gap-4">
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat1.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            POPCORN
+          </h2>
+        </div>
+
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat2.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            CRACKLE
+          </h2>
+        </div>
+
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat3.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            ROSIE
+          </h2>
+        </div>
+
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat4.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            LILY
+          </h2>
+        </div>
+
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat5.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            SARA
+          </h2>
+        </div>
+
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat6.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            LULA
+          </h2>
+        </div>
+
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat7.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            SEFO
+          </h2>
+        </div>
+
+        <div class="col-span-4 md:col-span-2 lg:col-span-1">
+          <img
+            class="w-[500px] h-[500px] rounded-3xl"
+            src={cat8.src}
+            alt="cat"
+          />
+          <h2
+            class="text-yellow-50 text-2xl text-center p-2 bg-red-950 rounded-3xl"
+          >
+            Coming Soon
+          </h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </body>
+</html>
+
+<style>
+  body {
+    margin-top: 8rem;
+    background-color: #ffe1cd;
+  }
+</style>
